@@ -59,9 +59,8 @@ Staff members often struggle to choose between multiple AI models:
 
 ### Configuration Files
 
-- `librechat.yaml` - Main configuration with model specs
-- `docker-compose.override.yml` - Docker volume mounts
-- `.env.example` - Template for environment variables
+- `librechat yaml` - Main configuration with model specs
+- `edited .env` - Template for environment variables; API Keys removed
 
 ### Model Selection Analysis
 ❓ **General Use** | GPT-5.4 |
