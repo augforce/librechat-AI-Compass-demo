@@ -1,0 +1,78 @@
+version: 1.3.5
+cache: true
+
+interface:
+  # This setting injects your custom paragraph into the center of the main window!
+  customWelcome: "Welcome to AI Compass, {{user.name}}, your curated AI guide."
+
+# --- ADD THIS NEW SPEECH BLOCK ---
+speech:
+  stt:
+    openai:
+      apiKey: '${STT_API_KEY}'
+      model: 'whisper-1'
+  speechTab:
+    # This forces the microphone to be on by default for all staff
+    speechToText:
+      engineSTT: "openai"
+
+# Define which AI providers are available
+endpoints:
+  # OpenAI models
+  openAI:
+    availableModels:
+      - "gpt-5.4"
+      - "gpt-5.4-mini"
+    userProvidedKeyAllowed: false
+    
+  # Anthropic (Claude) - remove this section if you don't have Claude key
+  anthropic:
+    availableModels:
+      - "Claude-sonnet-4-6"
+      - "Claude-opus-4-7"
+    userProvidedKeyAllowed: false
+
+modelSpecs:
+  enforce: false
+  # This array brings back the default menus from your first screenshot
+  addedEndpoints:
+    - "openAI"
+    - "anthropic"
+    - "google"
+    - "assistants"
+    - "agents"
+  list:
+    - name: "gpt-5.4"
+      label: "❓ General Use (gpt-5.4)"
+      description: "Simple questions, quick answers."
+      preset:
+        endpoint: "openAI"
+        modelDisplayLabel: "GPT 5.4"
+        
+    - name: "gpt-5.4-mini"
+      label: "🎧 Support Assistant (gpt-5.4-mini)"
+      description: "Tech support, FAQ."
+      preset:
+        endpoint: "openAI"
+        modelDisplayLabel: "GPT 5.4-mini"
+        
+    - name: "Claude-sonnet-4-6"
+      label: "✨ Creative Pro (Claude-sonnet-4-6)"
+      description: "Marketing copy, creative writing."
+      preset:
+        endpoint: "anthropic"
+        modelDisplayLabel: "Claude Sonnet 4-6"
+        
+    - name: "Claude-opus-4-7"
+      label: "💻 Code Expert (Claude-opus-4-7)"
+      description: "Programming, debugging."
+      preset:
+        endpoint: "anthropic"
+        modelDisplayLabel: "Claude Opus 4-7"
+
+    - name: "gpt-5.4"
+      label: "📊 Document Analyzer (gpt-5.4)"
+      description: "PDF analysis, research, long documents."
+      preset:
+        endpoint: "openAI"
+        modelDisplayLabel: "GPT 5.4"
