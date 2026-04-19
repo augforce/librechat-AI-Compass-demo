@@ -1,6 +1,8 @@
 # LibreChat Smart Model Guidance System -  AI Compass
 A user-friendly AI model selection system for LibreChat that helps staff choose the most appropriate AI model for their specific task, improving both output quality and cost efficiency.
 
+<img width="1717" height="1034" alt="Screenshot 2026-04-19 at 10 22 47 AM" src="https://github.com/user-attachments/assets/b7e824d4-097a-41d7-90dc-9c4c4f36c5ef" />
+
 ## The Problem
 Staff members often struggle to choose between multiple AI models:
 - Unclear which model is best for their specific use case
@@ -23,7 +25,7 @@ Staff members often struggle to choose between multiple AI models:
 | 💻 **Code Expert** | Claude Opus 4.7 | Programming, debugging, technical documentation |
 | 📊 **Document Analyzer** | GPT-5.4 | PDF analysis, research, long document review |
 
-**Plus:** All original models remain accessible for power users who know exactly what they need.
+**Plus:** All original models remain accessible for power users who know exactly what they need. Speech-to-test, based on OpenAI's Whisper, included in prompt window.
 
 ## Benefits
 
