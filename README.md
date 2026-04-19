@@ -79,6 +79,3 @@ Anthropic released Claude Opus 4.7 a few days ago on April 16, 2026, and it is c
 When analyzing modern documents, your staff isn't just parsing plain text—they need to extract insights from embedded charts, graphs, and complex data tables. OpenAI's native vision architecture in GPT-5.4 is currently unparalleled at accurately "seeing" and interpreting visual data from PDFs. While Claude models are brilliant at text reasoning, GPT-5.4 is far less likely to hallucinate the numbers inside a complex bar chart.
 
 ### Demo Video
-
-
-
