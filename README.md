@@ -1,4 +1,4 @@
-# LibreChat Smart Model Guidance System -  AI Compass
+# LibreChat Smart Model Guidance System
 A user-friendly AI model selection system for LibreChat that helps staff choose the most appropriate AI model for their specific task, improving both output quality and cost efficiency.
 
 <img width="1717" height="1034" alt="Screenshot 2026-04-19 at 10 22 47 AM" src="https://github.com/user-attachments/assets/b7e824d4-097a-41d7-90dc-9c4c4f36c5ef" />
